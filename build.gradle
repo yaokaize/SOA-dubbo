@@ -22,17 +22,15 @@ plugins {
     id 'java'
 }
 
-apply plugin: 'java'
-apply plugin: 'idea'
-// 使用spring boot
-apply plugin: "org.springframework.boot"
-// 使用spring boot的自动依赖管理
-apply plugin: 'io.spring.dependency-management'
-
-
 allprojects {
-    group 'org.example'
-    version '1.0-SNAPSHOT'
+    group 'com.meijia'
+    version '1.0.0'
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    // 使用spring boot
+    apply plugin: "org.springframework.boot"
+    // 使用spring boot的自动依赖管理
+    apply plugin: 'io.spring.dependency-management'
 
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
