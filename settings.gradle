@@ -1,0 +1,5 @@
+rootProject.name = 'SOA-dubbo'
+
+include('common')
+include('consumer')
+include('provider')
