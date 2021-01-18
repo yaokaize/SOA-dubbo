@@ -27,6 +27,7 @@ allprojects {
     version '1.0.0'
     apply plugin: 'java'
     apply plugin: 'idea'
+    apply plugin: 'application'
     // 使用spring boot
     apply plugin: "org.springframework.boot"
     // 使用spring boot的自动依赖管理
@@ -75,3 +76,4 @@ allprojects {
         testCompileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.16'
     }
 }
+bootJar { enabled = false}
