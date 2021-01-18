@@ -1,2 +1,14 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: consumer
+dubbo:
+  service:
+    version: 1.0.0
+  application:
+    name: consumer
+  registry:
+    address: zookeeper://127.0.0.1:2181
 logging:
   config: classpath:log4j2.xml

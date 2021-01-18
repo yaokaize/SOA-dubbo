@@ -1,6 +1,6 @@
 echo 'docker start zookeeper. doc is https://registry.hub.docker.com/_/zookeeper'
 docker stop cp-zookeeper
-docker run --name cp-zookeeper --restart always -d zookeeper
+docker run --name cp-zookeeper -p 2181:2181 --restart always -d zookeeper
 sleep 5
 
 echo 'docker start zookeeper. doc is https://registry.hub.docker.com/_/memcached'

@@ -1,2 +1,24 @@
+server:
+  port: 16000
+spring:
+  application:
+    name: provider
+  datasource:
+    url: jdbc:mysql://139.196.142.99:4806/wawa?autoReconnect=true&useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true
+    username: wawa-test
+    password: wawa~!@mima.com
+    driver-class-name: com.mysql.cj.jdbc.Driver
+dubbo:
+  service:
+    version: 1.0.0
+  application:
+    name: provider
+  scan:
+    base-packages: com.meijia
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20880
 logging:
   config: classpath:log4j2.xml

@@ -7,6 +7,9 @@ import lombok.Setter;
 
 import java.io.Serializable;
 
+/**
+ * @author kaiser
+ */
 @Data
 @NoArgsConstructor
 @Setter

@@ -54,6 +54,20 @@ allprojects {
     dependencies {
         implementation group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.4.2'
         implementation group: 'org.springframework.boot', name: 'spring-boot-starter-log4j2', version: '2.4.2'
+        implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.4.2'
+        implementation group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: '2.4.2'
+        implementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '2.1.4'
+        implementation group: 'com.google.guava', name: 'guava', version: '30.1-jre'
+        implementation group: 'org.apache.curator', name: 'curator-recipes', version: '5.1.0'
+        implementation group: 'org.apache.dubbo', name: 'dubbo-spring-boot-starter', version: '2.7.8'
+        implementation group: 'org.apache.dubbo', name: 'dubbo-dependencies-zookeeper', version: '2.7.8', ext: 'pom'
+
+        runtimeOnly group: 'mysql', name: 'mysql-connector-java', version: '8.0.22'
+        testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.4.2'
+
+        annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.16'
         compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.16'
+        testAnnotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.16'
+        testCompileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.16'
     }
 }
