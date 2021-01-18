@@ -40,6 +40,10 @@ allprojects {
         compile.exclude module: 'spring-boot-starter-logging'
     }
 
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+
     repositories {
         // 使用国内的源
         maven { url 'https://maven.aliyun.com/repository/public' }
