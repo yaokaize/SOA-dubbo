@@ -13,4 +13,17 @@ springboot2.4 + dubbo + zookeeper + mybatis + dubbo-admin
 gradle打包简单部署:
 1. clean -> build 
 2. 复制每个服务下的jar包 
-3. java -jar xx.jar 启动jar 
+3. java -jar xx.jar 启动jar
+4. nohup java -jar xx.jar -> xx.log & 后台启动部署jar输出日志到xx.log文件
+
+pm2部署: 官方文档 https://pm2.keymetrics.io/docs/usage/quick-start/
+1. 安装node 检验是否成功 node -v npm -v
+2. 为node添加环境变量
+    1. vim /etc/profile
+    2. export NODE_HOME=/usr/local/node
+    3. export PATH=$NODE_HOME/bin:$PATH
+    4. source /etc/profile
+3. 安装pm2 必须使用root用户 不然没有创建文件夹权限
+    1. npm install pm2 -g
+4. pm2 启动 项目
+    1. pm2 start xxx.json  (xxx.json文件在scripts文件中)

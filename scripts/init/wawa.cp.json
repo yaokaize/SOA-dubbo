@@ -1,0 +1,56 @@
+{
+  "consumer": {
+    "name": "consumer",
+    "script": "java",
+    "exec_mode": "fork",
+    "error_file": "./pmlog/err.log",
+    "out_file": "./pmlog/out.log",
+    "merge_logs": true,
+    "log_date_format": "YYYY/MM/DD HH:mm:ss",
+    "min_uptime": "60s",
+    "max_restarts": 30,
+    "autorestart": true,
+    "restart_delay": "60",
+    "args": [
+      "-jar",
+      "-Xms300m",
+      "-Xmx300m",
+      "-XX:MetaspaceSize=256M",
+      "-XX:MaxMetaspaceSize=256M",
+      "-XX:+AlwaysPreTouch",
+      "-XX:ReservedCodeCacheSize=128m",
+      "-XX:InitialCodeCacheSize=128m",
+      "-Xss512k",
+      "-XX:+UseG1GC",
+      "-XX:G1HeapRegionSize=4M",
+      "consumer-1.0.0.jar"
+    ]
+  },
+  "provider": {
+    "name": "provider",
+    "script": "java",
+    "exec_mode": "fork",
+    "error_file": "./pmlog/err.log",
+    "out_file": "./pmlog/out.log",
+    "merge_logs": true,
+    "log_date_format": "YYYY/MM/DD HH:mm:ss",
+    "min_uptime": "60s",
+    "max_restarts": 30,
+    "autorestart": true,
+    "restart_delay": "60",
+    "args": [
+      "-jar",
+      "-Xms300m",
+      "-Xmx300m",
+      "-XX:MetaspaceSize=256M",
+      "-XX:MaxMetaspaceSize=256M",
+      "-XX:+AlwaysPreTouch",
+      "-XX:ReservedCodeCacheSize=128m",
+      "-XX:InitialCodeCacheSize=128m",
+      "-Xss512k",
+      "-XX:+UseG1GC",
+      "-XX:G1HeapRegionSize=4M",
+      "provider-1.0.0.jar"
+    ]
+  }
+}
