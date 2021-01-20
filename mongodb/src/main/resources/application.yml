@@ -1,11 +1,17 @@
+server:
+  port: 16001
 spring:
   application:
     name: mongodb
+  main:
+    # 允许bean定义重写
+    allow-bean-definition-overriding: true
   data:
     mongodb:
-      uri: mongodb://47.102.137.16:27088/
+      database: yiyuan
       username: yiyuan
       password: yiyuan123
-
+      host: 47.102.137.16
+      port: 27088
 logging:
   config: classpath:log4j2.xml

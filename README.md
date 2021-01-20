@@ -5,6 +5,8 @@ springboot2.4 + dubbo + zookeeper + mybatis + dubbo-admin
 2. common: 公共模块
 3. consumer: 消费者 -> 可以作为api接口
 4. provider: 生产者 -> 相当于实现service的serviceImpl
+5. mongodb: 操作mongodb数据库
+6. redis: 操作redis
 
 环境配置需要注意：
 1. 需要下载插件 lombok 以及配置 Compiler -> annotation processors -> 勾选 enable annotation processing
