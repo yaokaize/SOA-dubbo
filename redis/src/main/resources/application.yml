@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password:
+logging:
+  config: classpath:log4j2.xml

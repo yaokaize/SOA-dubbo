@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: mongodb
+  data:
+    mongodb:
+      uri: mongodb://47.102.137.16:27088/
+      username: yiyuan
+      password: yiyuan123
+
+logging:
+  config: classpath:log4j2.xml
