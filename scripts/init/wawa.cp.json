@@ -1,5 +1,5 @@
 {
-  "consumer": {
+  "apps": [{
     "name": "consumer",
     "script": "java",
     "exec_mode": "fork",
@@ -25,8 +25,7 @@
       "-XX:G1HeapRegionSize=4M",
       "consumer-1.0.0.jar"
     ]
-  },
-  "provider": {
+  }, {
     "name": "provider",
     "script": "java",
     "exec_mode": "fork",
@@ -52,5 +51,5 @@
       "-XX:G1HeapRegionSize=4M",
       "provider-1.0.0.jar"
     ]
-  }
+  }]
 }
