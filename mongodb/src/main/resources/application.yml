@@ -8,10 +8,19 @@ spring:
     allow-bean-definition-overriding: true
   data:
     mongodb:
-      database: yiyuan
-      username: yiyuan
-      password: yiyuan123
-      host: 47.102.137.16
-      port: 27088
+      yiyuan:
+        database: yiyuan
+        username: yiyuan
+        password: yiyuan123
+        host: 47.102.137.16
+        port: 27088
+        authentication-database: admin
+      clawparty:
+        database: claw_party
+        username: yiyuan
+        password: yiyuan123
+        host: 47.102.137.16
+        port: 27088
+        authentication-database: admin
 logging:
   config: classpath:log4j2.xml
