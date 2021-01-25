@@ -3,10 +3,13 @@ springboot2.4 + dubbo + zookeeper + mybatis + dubbo-admin
 模块功能
 1. scripts: 项目搭建、版本升级脚本文件
 2. common: 公共模块
-3. consumer: 消费者 -> 可以作为api接口
-4. provider: 生产者 -> 相当于实现service的serviceImpl
-5. mongodb: 操作mongodb数据库
-6. redis: 操作redis
+3. dubbo-consumer: 8081 消费者 -> 可以作为api接口
+4. dubbo-provider: 16000 生产者 -> 相当于实现service的serviceImpl
+5. nosql-mongodb: 16001 操作mongodb数据库
+6. nosql-redis: 操作redis
+7. mq-rocketmq-producer: 16002  mq生产者代码
+9. mq-rocketmq-consumer: 16003 mq消费者代码
+10. lucene-elasticsearch: 16004 搜索 参考文档： https://www.cnblogs.com/balloon72/p/13177872.html
 
 环境配置需要注意：
 1. 需要下载插件 lombok 以及配置 Compiler -> annotation processors -> 勾选 enable annotation processing
