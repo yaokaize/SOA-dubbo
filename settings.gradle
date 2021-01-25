@@ -1,7 +1,9 @@
 rootProject.name = 'SOA-dubbo'
 
 include 'common'
-include 'consumer'
-include 'provider'
-include 'redis'
-include 'mongodb'
+include 'dubbo-consumer'
+include 'dubbo-provider'
+include 'nosql-redis'
+include 'nosql-mongodb'
+include 'mq-rocketmq-producer'
+include 'mq-rocketmq-consumer'
